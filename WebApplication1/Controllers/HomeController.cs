@@ -11,7 +11,7 @@ namespace WebApplication1.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.index = "Welcome to GC coffee shop!";
+            ViewBag.index = "Welcome to THE PISTONS coffee shop!";
             return View();
         }
 

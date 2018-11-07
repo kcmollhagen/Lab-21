@@ -12,6 +12,9 @@ namespace WebApplication1.Models
         public string email { get; set; }
         public string phoneNumber { get; set; }
         public string password { get; set; }
+        public string occupation { get; set; }
+        public string city { get; set; }
+        public string favoriteRoast { get; set; }
 
     }
 }

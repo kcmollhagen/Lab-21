@@ -1,15 +1,47 @@
-﻿
-<h2>Registration Page</h2>
+﻿<style>
+    p{
+        color: red;
+    }
+
+    h2{
+        color: blue;
+    }
+</style>
+
+<h2><b>Registration Page</b></h2>
 
 <form method="get" action="Result">
-	<p>First Name: </p><input name="firstName" value="Katie" />
-	<br />
-	<p>Last Name: </p><input name="lastName" value="Mollhagen" />
-	<br />
-	<p>Email: </p><input name="email" type="email" value="kcmollhagen@gmail.com" />
-	<br />
-	<p>Phone Number: </p><input name="phoneNumber" type="tel" value="555-555-5555" />
-	<br />
-	<p>Password: </p><input name="password" type="password" value="superSecretGoodPassword!1" />
-	<input type="submit" />
+
+    <p><b>First Name: </b></p><input name="firstName" value="Katie" required pattern="[a-zA-Z]*" />
+    <br />
+    <br />
+    <p><b>Last Name: </b></p><input name="lastName" value="Mollhagen" required pattern="[a-zA-Z]*" />
+    <br />
+    <br />
+    <p><b>Email: </b></p><input name="email" type="email" value="kcmollhagen@gmail.com" required />
+    <br />
+    <br />
+    <p><b>Phone Number: </b></p><input name="phoneNumber" type="tel" value="555-555-5555" required />
+    <br />
+    <br />
+    <p><b>Password: </b></p><input name="password" type="password" value="superSecretGoodPassword!1" required />
+    <br />
+    <br />
+    <p><b>Occupation: </b></p><input name="occupation" value="GC Student" required pattern="[a-zA-Z]*" />
+    <br />
+    <br />
+    <p><b>City: </b></p><input name="city" value="Kentwood" required pattern="[a-zA-Z]*" />
+    <br />
+    <br />
+    <p><b>Favorite Roast: </b></p>
+        <select name="favoriteRoast">
+        <option value="light">Light</option>
+        <option value="medium">Medium</option>
+        <option value="dark">Dark</option>
+        </select>
+    <br />
+    <br />
+
+    <input type="submit" />
+
 </form>
